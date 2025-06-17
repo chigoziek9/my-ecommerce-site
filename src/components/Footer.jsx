@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer class="w-full bg-black text-white sm:block md:block ">
+      <footer class="w-full bg-black text-white hidden lg:block">
         {/* first footer */}
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
