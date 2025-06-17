@@ -6,7 +6,7 @@ import SignUp from "./pages/Sign Up";
 import Cart from "./pages/Cart";
 import Navbar from "/src/components/Navbar";
 import Favourites from "./pages/Favourites";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetail";
 
 function App() {

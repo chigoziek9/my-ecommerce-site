@@ -11,7 +11,7 @@ import vehicle from "../assets/vehicle.jpg";
 import womenswatch from "../assets/womenswatch.png";
 import menswatch from "../assets/menswatch.png";
 import AdsImage from "../components/AdsImageComponent";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import React from "react";
 import FlashSales from "../components/FlashSales";
 import BestSelling from "../components/BestSelling";
