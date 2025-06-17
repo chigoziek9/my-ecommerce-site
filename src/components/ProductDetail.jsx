@@ -26,54 +26,45 @@ export default function ProductDetails() {
 
   return (
     <>
-      <div className="m-10 bg-gray-200 shadow rounded flex flex-row p-6 ">
-        <div className="max-w-xl mx-auto mt-10 p-6">
+      <div className="m-4 md:m-10 bg-gray-200 shadow rounded flex flex-col lg:flex-row p-4 md:p-6 gap-6">
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 flex justify-center items-center">
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="w-full h-64 object-cover rounded"
+            className="w-full max-w-md h-64 object-cover rounded"
           />
         </div>
 
-        <div className="max-w-xl mx-auto px-6 pb-6 bg-gray-200">
-          <h1 className="text-4xl font-bold mt-4">{product.title}</h1>
-          <h1 className="text-xl">{product.category}</h1>
-          <p className="text-red-400 text-2xl mt-2">${product.price}</p>
-          <p className="text-gray-500 line-through">
+        {/* Product Info Section */}
+        <div className="w-full lg:w-1/2 px-2 md:px-6 pb-4 md:pb-6">
+          <h1 className="text-2xl md:text-4xl font-bold mt-4">{product.title}</h1>
+          <h2 className="text-lg md:text-xl mt-1">{product.category}</h2>
+          <p className="text-red-500 text-xl md:text-2xl mt-2">${product.price}</p>
+          <p className="text-gray-500 line-through text-sm md:text-base">
             ${product.discountPercentage}
           </p>
-          <h1 className="text-2xl font-bold">Product Descriptions</h1>
-          <p className="mt-1">{product.description}</p>
-          <h1 className="mt-4 font-bold">
-            Stock: <span className="font-normal">{product.stock}</span>
-          </h1>
-          <h1 className="font-bold">
-            Rating:<span className="font-normal">{product.rating}</span>{" "}
-          </h1>
-          <h1 className="font-bold">
-            Brand: <span className="font-normal">{product.brand}</span>{" "}
-          </h1>
-          <h1 className="font-bold">
-            Weight: <span className="font-normal">{product.weight}</span>kg
-          </h1>
-          <h1 className="text-2xl font-bold mt-2">Dimensions</h1>
-          <h1 className="font-bold">
-            Width:{" "}
-            <span className="font-normal">{product.dimensions.width}</span>
-          </h1>
-          <h1 className="font-bold">
-            Height:
-            <span className="font-normal">{product.dimensions.height}</span>
-          </h1>
-          <h1 className="font-bold">
-            Depth:{" "}
-            <span className="font-normal">{product.dimensions.depth}</span>
-          </h1>
-          <div className="mt-4 flex gap-4">
-            <AddToCart productId={product.id} />
+
+          <h3 className="text-xl md:text-2xl font-bold mt-4">Product Descriptions</h3>
+          <p className="mt-1 text-sm md:text-base">{product.description}</p>
+
+          <div className="mt-4 space-y-1 text-sm md:text-base">
+            <p><span className="font-bold">Stock:</span> {product.stock}</p>
+            <p><span className="font-bold">Rating:</span> {product.rating}</p>
+            <p><span className="font-bold">Brand:</span> {product.brand}</p>
+            <p><span className="font-bold">Weight:</span> {product.weight}kg</p>
           </div>
 
-          <div className="mt-4 flex gap-4">
+          <h3 className="text-xl md:text-2xl font-bold mt-4">Dimensions</h3>
+          <div className="space-y-1 text-sm md:text-base">
+            <p><span className="font-bold">Width:</span> {product.dimensions.width}</p>
+            <p><span className="font-bold">Height:</span> {product.dimensions.height}</p>
+            <p><span className="font-bold">Depth:</span> {product.dimensions.depth}</p>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="mt-6 flex flex-col sm:flex-row gap-4">
+            <AddToCart productId={product.id} />
             <CheckOutBtn productId={product.id} />
           </div>
         </div>
