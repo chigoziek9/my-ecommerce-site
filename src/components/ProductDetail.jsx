@@ -16,6 +16,10 @@ export default function ProductDetails() {
       .catch((err) => console.error("Failed to load product", err));
   }, [id]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (!product) {
     return <p className="text-center mt-10 text-xl">Loading product...</p>;
   }
@@ -74,7 +78,6 @@ export default function ProductDetails() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }
