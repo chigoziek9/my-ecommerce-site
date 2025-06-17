@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SignUp from "./pages/Sign Up";
 import Cart from "./pages/Cart";
-import Navbar from "./components/navbar";
+import Navbar from "/src/components/Navbar";
 import Favourites from "./pages/Favourites";
 import Footer from "./components/footer";
 import ProductDetails from "./components/ProductDetail";
