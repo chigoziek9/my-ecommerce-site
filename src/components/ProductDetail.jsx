@@ -74,21 +74,7 @@ export default function ProductDetails() {
           </div>
         </div>
       </div>
-       <div className="m-10">
-          <div className="flex items-center space-x-2">
-            <div className="w-5 h-10 bg-red-400 rounded-xl"></div>
-            <h1 className="text-red-500 p-3">Our Products</h1>
-          </div>
-          <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-semibold">Explore Our Products</h1>
-          </div>
-        </div>
-      <div>
-        <ExploreProducts />
-      </div>
-      <div className="m-10">
-          <ViewProducts />
-      </div>
+      
     </>
   );
 }
