@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       {/* This is my first image hero image */}
-      <div className="p-10 sm:p-40 sm:items-center">
+      <div className="p-10 ">
         <div className="flex justify-center items-center mt-7 px-2 md:px-0">
           <img
             src={heroImg}
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* This is my group of cards */}
-        <div className="flex  justify-center gap-4 pb-8 px-2 ">
+        <div className="flex  justify-center gap-4 pb-8 px-2  sm:p-3">
           <FlashSales />
         </div>
 
@@ -64,8 +64,7 @@ export default function Home() {
             Browse By Category
           </h1>
         </div>
-
-        <div className="flex  justify-center gap-4 md:gap-8 pb-8 px-2 md:px-0">
+        <div className="flex flex-col border  p-5 lg:flex-row  items-center justify-center gap-4 md:gap-6 lg:gap-8 pb-8 px-2 md:px-4">
           <CategoryCard title="Tablets" imageUrl={tablet} />
           <CategoryCard title="Laptops" imageUrl={laptop} />
           <CategoryCard title="Men's Watches" imageUrl={menswatch} />
@@ -88,7 +87,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-4 pb-8 mt-8">
+        <div className="flex  justify-center gap-4 pb-8 px-2S sm:p-3">
           <BestSelling />
         </div>
 
@@ -109,7 +108,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-4 pb-8 mt-8">
+        <div className="flex justify-center gap-4 pb-8 mt-8 sm:p-5">
           <ExploreProducts />
         </div>
 
