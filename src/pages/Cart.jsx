@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import QuantityStepper from "../components/QuantityStepper";
+import CheckOutBtn from "../components/ProceedCheckOut";
+
 
 export default function Cart() {
   const { cartItems, removeFromCart } = useContext(CartContext);
@@ -82,9 +84,7 @@ export default function Cart() {
                 .toFixed(2)}
             </span>
           </div>
-          <button className="mt-4 w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">
-            Proceed to Checkout
-          </button>
+         <CheckOutBtn />
         </div>
       </div>
     </div>

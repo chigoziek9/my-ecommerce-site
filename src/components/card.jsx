@@ -3,7 +3,7 @@ import AddToCart from "./AddToCart";
 import AddToFavourites from "./AddToFavourites";
 import { useNavigate } from "react-router-dom";
 
-const Card = ({ products, onAddToCart }) => {
+const Card = ({ products}) => {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ const Card = ({ products, onAddToCart }) => {
         <div
           key={products.id}
           onClick={() => navigate(`/product/${products.id}`)}
-          className="w-[280px] sm:w-[300px] md:w-[350px] h-[400px] sm:h-[420px] p-4 bg-[#F5F5F5] cursor-pointer rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
+          className="w-[200px] sm:w-[200px] md:w-[200px] h-[300px] sm:h-[300px] p-4 bg-[#F5F5F5] cursor-pointer rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
         >
           {/* Favorite Icon */}
           <div className="absolute top-2 right-2 z-10">
@@ -38,9 +38,7 @@ const Card = ({ products, onAddToCart }) => {
         </div>
 
         {/* Add to Cart */}
-        <div className="mt-2 flex justify-center">
-          <AddToCart product={products} onAdd={onAddToCart} />
-        </div>
+       
       </div>
     </div>
   );

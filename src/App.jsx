@@ -8,6 +8,7 @@ import Navbar from "/src/components/Navbar";
 import Favourites from "./pages/Favourites";
 import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetail";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/favourites" element={<Favourites />} />
            <Route path="/product/:id" element={<ProductDetails />} />
+           <Route path="/checkout/:productId" element={<CheckoutPage />} />
         </Routes>
       </main>
 

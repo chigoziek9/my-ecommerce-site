@@ -10,7 +10,7 @@ export default function ExploreProducts() {
     if (storedProducts) {
       setProducts(JSON.parse(storedProducts));
     } else {
-      fetch("https://dummyjson.com/products?skip=9&limit=9")
+      fetch("https://dummyjson.com/products?skip=8&limit=8")
         .then((res) => res.json())
         .then((data) => {
           setProducts(data.products);

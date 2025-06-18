@@ -104,7 +104,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-semibold">Explore Our Products</h1>
-            <ViewProducts />
+            
           </div>
         </div>
 

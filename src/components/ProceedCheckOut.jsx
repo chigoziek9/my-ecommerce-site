@@ -1,11 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const CheckOutBtn = () => {
+export default function CheckOutBtn({ productId }) {
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    // Navigate to the checkout page
+   navigate(`/checkout/${productId}`);
+
+  };
+
   return (
-    <button className="w-full cursor-pointer px-4 py-3 sm:py-5 text-center bg-black text-white font-semibold text-sm sm:text-base hover:bg-blue-800 transition-colors duration-200">
-      Proceed To Checkout
+    <button
+      onClick={handleCheckout}
+      className="w-full sm:w-auto bg-green-600 text-white font-semibold px-22 mt-3 py-3 rounded hover:bg-green-700 transition-colors duration-200"
+    >
+      Proceed to Checkout
     </button>
   );
-};
-
-export default CheckOutBtn;
+}

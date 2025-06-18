@@ -12,7 +12,7 @@ export default function BestSelling() {
       setProducts(JSON.parse(storedProducts));
     } else {
       // Step 2: Fetch and store if not already saved
-      fetch("https://dummyjson.com/products?skip=9&limit=9")
+      fetch("https://dummyjson.com/products?skip=8&limit=8")
         .then((res) => res.json())
         .then((data) => {
           setProducts(data.products);
