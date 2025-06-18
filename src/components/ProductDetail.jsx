@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import AddToCart from "../components/AddToCart";
+import AddToCart from "./AddToCart";
 import CheckOutBtn from "./ProceedCheckOut";
 import ExploreProducts from "./ExploreProducts";
 import ViewProducts from "./ViewProducts";
 
+
 export default function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-
+  
   useEffect(() => {
     fetch(`https://dummyjson.com/products/${id}`)
       .then((res) => res.json())
@@ -64,7 +65,8 @@ export default function ProductDetails() {
 
           {/* Action Buttons */}
           <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <AddToCart productId={product.id} />
+            <AddToCart product={product} />
+
             <CheckOutBtn productId={product.id} />
           </div>
         </div>
