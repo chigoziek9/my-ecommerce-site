@@ -76,20 +76,25 @@ export default function Home() {
         <div className="h-1 w-full bg-[#F5F5F5] my-4 mt-8"></div>
 
         {/* BEST SELLING PRODUCTS */}
-        <div className="mt-10">
+        <div className="mt-10 px-2 md:px-0">
           <div className="flex items-center space-x-2">
-            <div className="w-5 h-10 bg-red-400 rounded-xl"></div>
-            <h1 className="text-red-500 p-3">This Month</h1>
+            <div className="w-3 h-6 md:w-5 md:h-10 bg-red-400 rounded-xl"></div>
+            <h1 className="text-red-500 p-2 md:p-3 text-base md:text-lg">
+              Today's
+            </h1>
           </div>
-          <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-semibold">Best Selling Products</h1>
-            <ViewProducts />
-          </div>
+          <h1 className="text-2xl md:text-4xl font-semibold mb-8">
+            Best Selling Products
+          </h1>
         </div>
 
-        <div className="flex  justify-center gap-4 pb-8 px-2S sm:p-3">
+        {/* This is my group of cards */}
+        <div className="flex  justify-center gap-4 pb-8 px-2  sm:p-3">
           <BestSelling />
         </div>
+
+        {/* This is my view products button */}
+        <ViewProducts />
 
         {/* ADS IMAGE */}
         <div className="h-1 w-full bg-[#F5F5F5] my-4 mt-8"></div>
