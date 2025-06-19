@@ -9,6 +9,13 @@ import Favourites from "./pages/Favourites";
 import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetail";
 import CheckoutPage from "./pages/CheckoutPage";
+import PaymentPage from "./pages/PaymentPage";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import SuccessPage from "./pages/SuccessPage";
+
+
+
 
 function App() {
   return (
@@ -28,12 +35,17 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/favourites" element={<Favourites />} />
            <Route path="/product/:id" element={<ProductDetails />} />
-           <Route path="/checkout/:productId" element={<CheckoutPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+           <Route path="/payment" element={<PaymentPage />} />
+           <Route path="/purchaseSuccess" element={<SuccessPage />} />
+          
+
         </Routes>
       </main>
 
       {/* Footer */}
       <Footer />
+            <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }
