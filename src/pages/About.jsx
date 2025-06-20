@@ -69,7 +69,7 @@ export default function About() {
           <p className="mt-4 text-base md:text-lg">
             Exclusive has more than 1 million products to offer, growing very
             fast. Exclusive offers a diverse assortment in categories ranging
-            from consumer electronics to fashion and household items.
+            from consumer electronics to fashion and household items.We are the best at what we do.
           </p>
         </div>
 
@@ -87,6 +87,7 @@ export default function About() {
             title={card.title}
             text={card.text}
             image={card.image}
+
           />
         ))}
       </div>
