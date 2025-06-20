@@ -29,7 +29,7 @@ function Navbar() {
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/signup">Sign Up</Link>
+            
           </div>
 
           {/* Right Icons */}
@@ -58,7 +58,6 @@ function Navbar() {
             <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-            <Link to="/signup" onClick={() => setIsOpen(false)}>Sign Up</Link>
             <Link to="/cart" onClick={() => setIsOpen(false)} className="flex items-center gap-2">
               <img src={Cart} alt="Cart" className="w-5 h-5" />
               Cart

@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       {/* This is my first image hero image */}
-      <div className="p-10 ">
+      <div className="  p-20 ">
         <div className="flex justify-center items-center mt-7 px-2 md:px-0">
           <img
             src={heroImg}
