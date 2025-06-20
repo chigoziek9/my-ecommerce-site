@@ -12,6 +12,7 @@ import PaymentPage from "./pages/PaymentPage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SuccessPage from "./pages/SuccessPage";
+import ProductsPage from "./pages/ProductsPage";
 
 
 
@@ -36,6 +37,8 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
            <Route path="/payment" element={<PaymentPage />} />
            <Route path="/purchaseSuccess" element={<SuccessPage />} />
+           <Route path="/products" element={<ProductsPage />} />
+
           
 
         </Routes>
