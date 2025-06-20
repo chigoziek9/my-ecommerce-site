@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import SignUp from "./pages/Sign Up";
 import Cart from "./pages/Cart";
 import Navbar from "/src/components/Navbar";
 import Favourites from "./pages/Favourites";
