@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import QuantityStepper from "../components/QuantityStepper";
 import CheckOutBtn from "../components/ProceedCheckOut";
+import Breadcrumb from "../components/Breadcrumb";
+
 
 
 export default function Cart() {
@@ -9,14 +11,19 @@ export default function Cart() {
 
   if (cartItems.length === 0) {
     return (
+      <>
+       <Breadcrumb />
+
       <div className="flex justify-center items-center h-64">
         <p className="text-center text-2xl text-gray-500">Your cart is empty</p>
       </div>
+      </>
     );
   }
 
   return (
     <div className="max-w-6xl mx-auto p-6">
+      <Breadcrumb/>
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Home / Cart</h1>
 
       {/* Header Row */}

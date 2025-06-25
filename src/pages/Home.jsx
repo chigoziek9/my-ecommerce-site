@@ -16,10 +16,13 @@ import React from "react";
 import FlashSales from "../components/FlashSales";
 import BestSelling from "../components/BestSelling";
 import ExploreProducts from "../components/ExploreProducts";
+import Breadcrumb from "../components/Breadcrumb";
+
 
 export default function Home() {
   return (
     <>
+    <Breadcrumb />
       {/* This is my first image hero image */}
       <div className="  p-20 ">
         <div className="flex justify-center items-center mt-7 px-2 md:px-0">

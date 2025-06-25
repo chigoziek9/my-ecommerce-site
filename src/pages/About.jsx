@@ -9,6 +9,8 @@ import Services4 from "../assets/Services4.png";
 import Aboutimg1 from "../assets/Aboutimg1.png";
 import Aboutimg2 from "../assets/Aboutimg2.png";
 import Aboutimg3 from "../assets/Aboutimg3.png";
+import Breadcrumb from "../components/Breadcrumb";
+
 
 export default function About() {
   const cards = [
@@ -54,6 +56,7 @@ export default function About() {
 
   return (
     <div className="px-4 md:px-10 py-8 pb-30">
+      <Breadcrumb />
       {/* Our Story Section */}
       <div className="flex flex-col lg:flex-row items-center gap-10">
         {/* Text Section */}

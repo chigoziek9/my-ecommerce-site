@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle } from "lucide-react";
+import Breadcrumb from "../components/Breadcrumb";
+
 
 export default function SuccessPage() {
   return (
+    <>
+     <Breadcrumb />
+
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
       <div className="bg-white shadow-md rounded-xl p-10 max-w-md text-center">
         <CheckCircle className="text-green-500 w-16 h-16 mx-auto mb-4" />
@@ -21,5 +26,6 @@ export default function SuccessPage() {
         </Link>
       </div>
     </div>
+    </>
   );
 }

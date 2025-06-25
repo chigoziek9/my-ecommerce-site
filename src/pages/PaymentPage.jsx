@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import bankcards from "../assets/bankcards.png";
 import { useNavigate } from "react-router-dom";
+import Breadcrumb from "../components/Breadcrumb";
+
 
 export default function PaymentPage() {
   const navigate = useNavigate();
@@ -24,6 +26,7 @@ export default function PaymentPage() {
 
   return (
     <>
+     <Breadcrumb />
       <div className="p-6 max-w-2xl mx-auto bg-white shadow rounded">
         <h1 className="text-4xl text-center font-bold mb-6">Payment Page</h1>
         {cartItems.map((product) => (
