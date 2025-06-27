@@ -18,7 +18,7 @@ function Navbar() {
 
 
   return (
-    <div className="bg-white shadow-md fixed top-0 left-0 w-full z-50" data-aos="fade-down">
+    <div className="bg-white shadow-md fixed top-0 left-0 w-full z-80 " data-aos="fade-down">
       {/* Top banner */}
       <section className="bg-black text-white p-2 text-sm">
         <div className="w-full max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">

@@ -4,7 +4,7 @@ import Mail from "../assets/mail.png";
 
 export default function Contact() {
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto bg-white shadow rounded">
+    <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto bg-white shadow rounded mt-35">
       <Breadcrumb />
       <h1 className="mt-4 text-3xl"> Contact Us</h1>
       <div className="flex flex-col lg:flex-row gap-6">

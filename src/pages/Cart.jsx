@@ -22,7 +22,7 @@ export default function Cart() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto p-6 mt-35">
       <Breadcrumb/>
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Home / Cart</h1>
 

@@ -61,7 +61,7 @@ export default function About() {
   ];
 
   return (
-    <div className="px-4 md:px-10 py-8 pb-30" data-aos="fade-up">
+    <div className="px-4 md:px-10 py-8 pb-30 pt-20 mt-30" data-aos="fade-up " >
       {/* Breadcrumb Section */}
       <Breadcrumb />
       {/* Our Story Section */}

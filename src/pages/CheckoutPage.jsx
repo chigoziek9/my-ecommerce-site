@@ -8,7 +8,7 @@ export default function CheckoutPage() {
  
 
   return (
-    <div className="p-6 max-w-7xl mx-auto bg-white shadow rounded">
+    <div className="p-6 max-w-7xl mx-auto bg-white shadow rounded mt-35">
        <Breadcrumb/>
       <div>
         <CheckoutForm />
