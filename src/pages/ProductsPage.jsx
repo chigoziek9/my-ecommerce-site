@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/card";
 import Breadcrumb from "../components/Breadcrumb";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    duration: 1200,
+  });
 
 
 export default function ProductsPage() {
@@ -30,9 +35,9 @@ export default function ProductsPage() {
   return (
     <>
      <Breadcrumb />
-    <div className="flex justify-center flex-wrap gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 pb-8">
+    <div className="flex justify-center flex-wrap gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 pb-8"  data-aos="fade-down">
       {products.map((product, i) => (
-        <Card products={product} key={i} />
+        <Card products={product} key={i}   />
       ))}
     </div>
     </>

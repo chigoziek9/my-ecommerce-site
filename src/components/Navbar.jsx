@@ -3,12 +3,22 @@ import { Link } from "react-router-dom";
 import Cart from "../assets/Cart.png";
 import favourites from "../assets/favourites.png";
 import { Menu, X } from "lucide-react"; // Optional: You can use any icon library
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+   useEffect(() => {
+          AOS.init();
+        }, []);
+
+
   return (
-    <div>
+    <div className="bg-white shadow-md fixed top-0 left-0 w-full z-50" data-aos="fade-down">
       {/* Top banner */}
       <section className="bg-black text-white p-2 text-sm">
         <div className="w-full max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center px-4">

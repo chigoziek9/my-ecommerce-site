@@ -10,9 +10,15 @@ import Aboutimg1 from "../assets/Aboutimg1.png";
 import Aboutimg2 from "../assets/Aboutimg2.png";
 import Aboutimg3 from "../assets/Aboutimg3.png";
 import Breadcrumb from "../components/Breadcrumb";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function About() {
+   useEffect(() => {
+        AOS.init();
+      }, []);
   const cards = [
     {
       title: "10.5K",
@@ -55,10 +61,11 @@ export default function About() {
   ];
 
   return (
-    <div className="px-4 md:px-10 py-8 pb-30">
+    <div className="px-4 md:px-10 py-8 pb-30" data-aos="fade-up">
+      {/* Breadcrumb Section */}
       <Breadcrumb />
       {/* Our Story Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-10">
+      <div className="flex flex-col lg:flex-row items-center gap-10" data-aos="fade-up">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-gray-800">
           <h1 className="font-extrabold text-3xl md:text-5xl">Our Story</h1>
@@ -77,13 +84,13 @@ export default function About() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="w-full lg:w-1/2 flex justify-center" data-aos="fade-left">
           <img src={SideImage} alt="About" className="w-full max-w-md rounded-lg" />
         </div>
       </div>
 
       {/* Stats Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 " data-aos="fade-up">
         {cards.map((card, index) => (
           <AboutCard
             key={index}
@@ -96,7 +103,7 @@ export default function About() {
       </div>
 
       {/* Team Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12" data-aos="fade-right">
         {cards2.map((card1, index) => (
           <AboutImage
             key={index}

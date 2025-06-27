@@ -18,11 +18,10 @@ import BestSelling from "../components/BestSelling";
 import ExploreProducts from "../components/ExploreProducts";
 import Breadcrumb from "../components/Breadcrumb";
 
-
 export default function Home() {
   return (
     <>
-    <Breadcrumb />
+      <Breadcrumb />
       {/* This is my first image hero image */}
       <div className="  p-20 ">
         <div className="flex justify-center items-center mt-7 px-2 md:px-0">
@@ -56,7 +55,7 @@ export default function Home() {
         <div className="h-1 w-full bg-[#F5F5F5] my-4 mt-4"></div>
 
         {/* Category section */}
-        <div className="mt-10 px-2 md:px-0">
+        <div className="mt-10 px-2 md:px-0" data-aos="fade-right">
           <div className="flex items-center space-x-2">
             <div className="w-3 h-6 md:w-5 md:h-10 bg-red-400 rounded-xl"></div>
             <h1 className="text-red-500 p-2 md:p-3 text-base md:text-lg">
@@ -79,7 +78,7 @@ export default function Home() {
         <div className="h-1 w-full bg-[#F5F5F5] my-4 mt-8"></div>
 
         {/* BEST SELLING PRODUCTS */}
-        <div className="mt-10 px-2 md:px-0">
+        <div className="mt-10 px-2 md:px-0 " data-aos="fade-left">
           <div className="flex items-center space-x-2">
             <div className="w-3 h-6 md:w-5 md:h-10 bg-red-400 rounded-xl"></div>
             <h1 className="text-red-500 p-2 md:p-3 text-base md:text-lg">
@@ -112,11 +111,13 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-semibold">Explore Our Products</h1>
-            
           </div>
         </div>
 
-        <div className="flex justify-center gap-4 pb-8 mt-8 sm:p-5">
+        <div
+          className="flex justify-center gap-4 pb-8 mt-8 sm:p-5"
+          data-aos="zoom-in"
+        >
           <ExploreProducts />
         </div>
 

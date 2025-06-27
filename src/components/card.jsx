@@ -1,13 +1,23 @@
-import React from "react";
+
 import AddToCart from "./AddToCart";
 import AddToFavourites from "./AddToFavourites";
 import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+
+
+  
 const Card = ({ products}) => {
   const navigate = useNavigate();
+     useEffect(() => {
+        AOS.init();
+      }, []);
+
 
   return (
-    <div className="flex justify-center p-4 sm:p-6">
+    <div className="flex justify-center p-4 sm:p-6 " data-aos="fade-left">
       <div>
         <div
           key={products.id}
