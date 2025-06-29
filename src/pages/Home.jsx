@@ -124,15 +124,6 @@ export default function Home() {
         <ViewProducts />
         <div className="h-1 w-full bg-[#F5F5F5] my-4 mt-16"></div>
 
-        <div className="mt-10">
-          <div className="flex items-center space-x-2">
-            <div className="w-5 h-10 bg-red-400 rounded-xl"></div>
-            <h1 className="text-red-500 p-3">Featured</h1>
-          </div>
-          <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-semibold">New Arrival</h1>
-          </div>
-        </div>
       </div>
     </>
   );
