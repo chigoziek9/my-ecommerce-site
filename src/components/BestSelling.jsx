@@ -6,10 +6,10 @@ export default function BestSelling() {
 
   useEffect(() => {
     // Step 1: Try to get products from localStorage
-    const storedProducts = localStorage.getItem("bestselling");
+    const bestselling = localStorage.getItem("bestselling");
 
-    if (storedProducts) {
-      setProducts(JSON.parse(storedProducts));
+    if (bestselling) {
+      setProducts(JSON.parse(bestselling));
     } else {
       // Step 2: Fetch and store if not already saved
       fetch("https://dummyjson.com/products?skip=8&limit=8")
