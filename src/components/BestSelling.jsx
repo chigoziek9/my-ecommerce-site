@@ -6,7 +6,7 @@ export default function BestSelling() {
 
   useEffect(() => {
     // Step 1: Try to get products from localStorage
-    const storedProducts = localStorage.getItem("exploreProducts");
+    const storedProducts = localStorage.getItem("bestselling");
 
     if (storedProducts) {
       setProducts(JSON.parse(storedProducts));
@@ -16,7 +16,7 @@ export default function BestSelling() {
         .then((res) => res.json())
         .then((data) => {
           setProducts(data.products);
-          localStorage.setItem("exploreProducts", JSON.stringify(data.products));
+          localStorage.setItem("bestselling", JSON.stringify(data.products));
         });
     }
   }, []);
