@@ -73,7 +73,7 @@ export default function About() {
             Launched in 2029, Exclusive is South Asia's premier online shopping
             marketplace with an active presence in Bangladesh. Supported by a
             wide range of tailored marketing, data, and service solutions,
-            Exclusive has 10,500 sellers and 300 brands and serves 3 million
+            Exclusive has 11,500 sellers and 300 brands and serves 3 million
             customers across the region.
           </p>
           <p className="mt-4 text-base md:text-lg">
