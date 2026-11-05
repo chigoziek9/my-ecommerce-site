@@ -70,7 +70,7 @@ export default function About() {
         <div className="w-full lg:w-1/2 text-gray-800">
           <h1 className="font-extrabold text-3xl md:text-5xl">Our Story</h1>
           <p className="mt-6 text-base md:text-lg">
-            Launched in 2020, Exclusive is South Asia’s premier online shopping
+            Launched in 2029, Exclusive is South Asia's premier online shopping
             marketplace with an active presence in Bangladesh. Supported by a
             wide range of tailored marketing, data, and service solutions,
             Exclusive has 10,500 sellers and 300 brands and serves 3 million
