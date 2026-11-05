@@ -22,7 +22,7 @@ export default function About() {
   const cards = [
     {
       title: "10.5K",
-      text: "Sellers Active On Our Site.",
+      text: "Sellers Active On Our Sites.",
       image: Services1,
     },
     {
@@ -70,14 +70,14 @@ export default function About() {
         <div className="w-full lg:w-1/2 text-gray-800">
           <h1 className="font-extrabold text-3xl md:text-5xl">Our Story</h1>
           <p className="mt-6 text-base md:text-lg">
-            Launched in 2015, Exclusive is South Asia’s premier online shopping
+            Launched in 2020, Exclusive is South Asia’s premier online shopping
             marketplace with an active presence in Bangladesh. Supported by a
             wide range of tailored marketing, data, and service solutions,
             Exclusive has 10,500 sellers and 300 brands and serves 3 million
             customers across the region.
           </p>
           <p className="mt-4 text-base md:text-lg">
-            Exclusive has more than 1 million products to offer, growing very
+            Exclusive has more than 5 million products to offer, growing very
             fast in the commercial world. Exclusive offers a diverse assortment in categories ranging
             from consumer electronics to fashion and household items.We are the best at what we do.
           </p>
